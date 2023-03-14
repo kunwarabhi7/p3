@@ -37,7 +37,7 @@ const Header = (props: Props) => {
           opacity:1,
           scale:1,
         }}
-        transition={{duration:1}}
+        transition={{duration:1.5}}
         >
             <SocialIcon network='email' fgColor='gray' bgColor='transparent' />
        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get IN Touch</p>
