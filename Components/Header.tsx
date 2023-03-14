@@ -12,11 +12,14 @@ const Header = (props: Props) => {
           x:-500,
           opacity:0,
           scale:0.5,
-        }}
+        }} 
         animate={{
           x:0,
           opacity:1,
           scale:1,
+        }}
+        transition={{
+          duration:1.5,
         }}>
             <SocialIcon url='https://twitter.com/kunwarabhi7' fgColor='blue'  bgColor='transparent' />
             <SocialIcon url='https://github.com/kunwarabhi7' fgColor='gray'  bgColor='transparent' />
@@ -25,10 +28,20 @@ const Header = (props: Props) => {
         </motion.div>
         
         {/* Contact Me */}
-        <div className='flex flex-row   items-center cursor-pointer text-gray-300'>
+        <motion.div className='flex flex-row   items-center cursor-pointer text-gray-300' 
+        initial={{x:500,
+        opacity:0,scale:0.5
+        }}
+        animate={{
+          x:0,
+          opacity:1,
+          scale:1,
+        }}
+        transition={{duration:1}}
+        >
             <SocialIcon network='email' fgColor='gray' bgColor='transparent' />
        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get IN Touch</p>
-        </div>
+        </motion.div>
     </header>
   )
 }
