@@ -6,6 +6,7 @@ import Hero from '@/Components/Hero'
 import Project from '@/Components/Project'
 import Skills from '@/Components/Skills'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -46,6 +47,14 @@ export default function Home() {
      <section id='contact' className='snap-start'>
       <ContactMe />
      </section>
+     <Link href="#hero">
+      <footer className='sticky bottom-5 w-full cursor-pointer'>
+<div className='flex items-center justify-center'>
+
+      <img className='w-10 h-10 rounded-full grayscale hover:grayscale-0 cursor-pointer' src='https://pbs.twimg.com/profile_images/1634229831000027136/SGHVSziK_400x400.jpg'/>
+</div>
+      </footer>
+     </Link>
     </div>
   )
 }
